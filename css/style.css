@@ -81,7 +81,6 @@ body {
 .header-ul > li a{
     font-family: "apercumedium";
     display: inline-block;
-    margin: 0 35px;
     color: white;
     text-transform: uppercase;
     text-decoration: none;
@@ -100,7 +99,6 @@ body {
 .header-ul > li {
     font-family: "apercumedium";
     display: inline-block;
-    margin: 0 ;
     color: white;
     text-transform: uppercase;
     text-decoration: none;
@@ -169,15 +167,6 @@ body {
   max-width: 850px;
   width: 100%;
 }
-
-
-
-
-
-
-
-
-
 
 
 
