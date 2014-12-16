@@ -50,7 +50,7 @@
   
   .container .column,
   .container .columns {
-    margin-left: 4%; }
+    margin-left: 0%; }
   
   .container .one.column,
   .container .one.columns          { width: 4.66666666667%; }
@@ -399,15 +399,23 @@ there.
 /* Larger than mobile */
 @media (min-width: 400px) {
 
+.header-ul > li a{ 
+  display: none;
+}
 
-  h1 {
-  font-size: 1.5em;
+/* Blog */
+
+
+
+#blog img {
+  max-width: 90%;
+}
+
+h1 {
+  font-size: 2em;
   text-align: center;
 }
 
-  .slider ul {
-
-  }
 
 .social {
   float: center;
@@ -422,7 +430,10 @@ there.
   }
 }
 
-/* Larger than phablet (also point when grid becomes active) */
+
+
+/* Larger than phablet (also point when grid becomes active) **********
+**********************************    MIN WIDTH     550px    ***********/
 @media (min-width: 550px) {
   .slider {
     min-height: 500px;
@@ -432,21 +443,39 @@ there.
   .header-ul > li a{ 
     font-size: 1.6rem;
     margin: 0 15px;
-  }s
+  }
+
+  h1 {
+    font-size: 3.6rem;
+  }
+
+  h5 {
+    font-size: 2rem;
+  }
+
+  #blog {
+    text-align: center;
+  }
+
+  #blog img {
+    float: left;
+  }
+
 }
 
 
 
 
 
-/* Larger than tablet */
+/********************** Larger than tablet *******************************
+********************** Min Width     750px *******************************/
 @media (min-width: 750px) {
   
 
 
 
 h1 {
-  font-size: 2em;
+  font-size: 4rem;
 }
 
 
@@ -468,6 +497,8 @@ h1 {
 /* Larger than desktop */
 @media (min-width: 1000px) {
 
+
+
   h1 {
   font-size: 3em;
   }
@@ -477,6 +508,10 @@ h1 {
       margin: 0 35px;
   }
 
+
+  #blog img {
+    width: 80%;
+  }
 
 
 

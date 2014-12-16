@@ -22,6 +22,8 @@ h5 {
   color: #1d1d1d;
 }
 
+p {font-size: 2rem;}
+
 body {
 	font-family: 'apercumedium', sans-serif;
 
@@ -47,6 +49,22 @@ body {
 
 
 /****************** TOP BAR MENU **************************/
+
+@media (min-width: 400px) {
+  .header {
+    display: none;
+  }
+
+@media (min-width: 550px){
+  .header 
+
+  .header.scrolling {
+    background-color: #1d1d1d;
+    height: 25px;
+}
+}
+
+@media (min-width: 675px){
 
 .header {
     position: fixed;
@@ -109,9 +127,14 @@ body {
     height: 2000px;
 }
 
+}
+
+
 
 
 /************* SLIDER ***************/
+
+
 
 .slider h1 {
   margin: 550px auto 0;
@@ -137,35 +160,70 @@ body {
   }
 
 
-
-
-
-/************* ABOUT ***************/
-
-#about h1 {
-  margin-top: 50px;
-  margin-bottom: 0px;
+@media (min-width: 400px) {
+  .slider {
+    height: 650px;
+  }
 }
 
-#about h1,h3,p {
+@media (min-width: 750px) {
+  .slider { 
+  background: url(../img/botez.jpg) no-repeat center center ; 
+  -webkit-background-size: auto 100%;
+  -moz-background-size: 100%;
+  -o-background-size: auto 100%;
+  background-size: auto 100%;
+  position: relative;
+  background-attachment: scroll;
+  height: 825px;
+  background-position: center top;
+  }
+
+
+}
+
+
+/************* Events ***************/
+
+#events {
+  background-color: #FDD6C8;
+}
+
+
+#events h1 {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-size: 4.6rem;
+}
+
+#events h1,h3, h5, h6, p{
 	text-align: center;
 }
 
-#about h6 {
+#events h5 {
+  margin-bottom: 0px;
+  font-family: 'apercuregular';
+}
+#events h6 {
   text-align: center;
   margin-top: 10px;
 }
-#about h6, p {
+#events h6, p {
 	font-family: 'apercumedium';
 	color: black;
 }
 
 
-#about img {
+#events img {
   display: block;
-  margin: 85px auto 0;
+  margin: 65px auto 25px;
   max-width: 850px;
-  width: 100%;
+  width: 70%;
+}
+
+#events h5.last {
+  margin-bottom: 25px;
 }
 
 
@@ -180,7 +238,7 @@ body {
   -o-background-size: auto 100%;
   background-size: auto 100%;
   position: relative;
-  min-height: 500px;
+  width: 100%;
   background-attachment: scroll;
   background-position: center top;
   }
@@ -213,11 +271,15 @@ body {
 
 
 /**********  BLOG  *********/
+
+
+
 #blog {
   background-color: white;
 }
 #blog h1 {
   text-align: left;
+  margin-top: 65px;
 }
 
 #blog h5 {
@@ -227,34 +289,63 @@ body {
 }
 
 #blog img {
-	float: right;
-	display: block;
-  width: 83%;
-  margin-top: 5.8rem;
-}
-
-#blog .columns {
-	padding: 0px;
-}
-
-#blog .row {
-  margin: 4rem 0 8rem;
-}
-#blog button {
-  margin-top: 3rem;
   float: right;
+  margin-top: 75px;
+}
+
+#blog .seven.columns {
+	padding: 0px;
 
 }
+
+#blog .five.columns {
+  margin-bottom: 100px;
+  float: right;
+  
+}
+
+
+
+@media (min-width: 440px) {
+  #blog .container .four.columns {
+    float:left;
+    width: 100%;
+  }
+
+  #blog h1, h5, button {
+    text-align: center;
+  }
+
+  #blog .button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+}
+
+@media (min-width: 400px) {
+
 
 
 
 /************ MINISTRIES *********/
 
-#ministries {
-	background: url(../img/mexico-2.jpg);
-  background-size: 100%;
-  height: 600px;
-}
+
+#ministries { 
+  background: url(../img/mexico-2.jpg) no-repeat center center ; 
+  -webkit-background-size: auto 100%;
+  -moz-background-size: 100%;
+  -o-background-size: auto 100%;
+  background-size: auto 100%;
+  position: relative;
+  min-height: 600px;
+  background-attachment: scroll;
+  background-position: center top;
+  }
 
 #ministries h1 {
 	text-align: left;
@@ -288,6 +379,8 @@ body {
 
 
 
+
+
 /*********** YOUTH *********/
 
 #youth {
@@ -305,19 +398,27 @@ body {
 	margin-top: 30px;
 }
 
+#youth p {
+  text-align: left;
+}
+
 #youth img {
   max-width: 300px;
   margin-bottom: 50px;
+  width: 90%;
 }
 
-
+@media (min-width: 400px) {
+  #youth h4 {
+    margin-top: 0px;
+  }
 
 /******* FOOTER *********/
 
 #footer {
 }
 
-#footer h5 {
+#footer h6 {
 	text-align: center;
 }
 
