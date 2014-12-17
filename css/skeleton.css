@@ -399,7 +399,7 @@ there.
 /* Larger than mobile */
 @media (min-width: 400px) {
 
-.header-ul > li a{ 
+.header{ 
   display: none;
 }
 
@@ -412,7 +412,7 @@ there.
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.6em;
   text-align: center;
 }
 
