@@ -113,12 +113,13 @@
 
     </style>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/slicknav.css" />
-  <script src="js/jquery.slicknav.min.js"></script>
+  <link rel="stylesheet" href="css/responsive-nav.css">
+  <script src="js/responsive-nav.js"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png" />
+
 
 </head>
 <body>
@@ -172,6 +173,17 @@ function parallax(){
         <li><a href="#youth">Youth</a></li>
     </ul>
     </header>
+
+    <nav class="nav-collapse">
+      <ul>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#live">Live</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#ministries">Ministries</a></li>
+        <li><a href="#youth">Youth</a></li>
+      </ul>
+    </nav>
+
     
 
 
@@ -314,6 +326,11 @@ function parallax(){
     return false;
 });
 </script>
+
+<script>
+    var nav = responsiveNav(".nav-collapse");
+  </script>
+
 <script src="/js/jquery-2.1.1.js"></script>
  
       
