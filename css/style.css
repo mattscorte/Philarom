@@ -53,6 +53,10 @@ body {
     display: none;
   }
 
+  .header ul{
+    display: none;
+  }
+
 #mobile-menu {
     background: url("/img/logo.png") no-repeat scroll 0 0 transparent;
     cursor: pointer;
