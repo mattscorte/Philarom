@@ -95,6 +95,14 @@ body {
     z-index: 5;
     display: block;
 }
+
+#menu {
+  color: white;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .header.scrolling {
     background-color: #1d1d1d;
     height: 40px;
@@ -108,12 +116,14 @@ body {
     text-align: center;
     color: white;
     font-size: 1.3em;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     list-style-type: none;
+    display: block;
+
 
 }
-.header-ul > li a{
+ .header-ul > li a{
     font-family: "apercumedium";
     display: inline-block;
     color: white;
@@ -221,8 +231,9 @@ body {
 @media (min-width: 400px) {
 
   #events {
-  background-color: #FDDDD5;
+  background-color: #F7CEC4; 
 }
+    /**  FDDDD5 **/
 
   #events h3 {
     color: white;
@@ -310,19 +321,18 @@ body {
 *****************************************************************************/
 
 @media (min-width: 400px) {
-
-#live { 
+  #live{ 
   background: url(../img/philachurch.jpg) no-repeat center center ; 
   -webkit-background-size: auto 100%;
   -moz-background-size: 100%;
   -o-background-size: auto 100%;
   background-size: auto 100%;
   position: relative;
-  width: 100%;
+  height: 100%;
   background-attachment: scroll;
   background-position: center top;
   }
-
+}
 
 #live h1 {
 	text-align: center;
@@ -344,7 +354,7 @@ body {
 	display: block;
   	margin-left: auto;
   	margin-right: auto;
-    width: 30%;
+    width: 15%;
 }
 
 }
@@ -353,6 +363,9 @@ body {
 /***************** Min-Width 750px ************/
 @media (min-width: 750px) {
 
+#live {
+  width: 100%;
+}
 
 #live img {
     padding: 115px;
@@ -370,12 +383,21 @@ body {
 
 }
 
+/***************** Min-Width 925px ************/
+
+
+@media (min-width: 925px) {
+  #live{ 
+    background-size: 100%;
+  }
+}
 
 
 
 
-
-/**********  BLOG  *********/
+/****************************************************************************
+******************************* BLOG SECTION ********************************
+*****************************************************************************/
 
 
 
@@ -537,7 +559,7 @@ input[type="button"].button-white {
   float: right;
 }
 
-/********* min width:   925px ************/
+/********* min width:   550px ************/
 
 @media (min-width: 550px) {
   #ministries h1 {
@@ -545,6 +567,13 @@ input[type="button"].button-white {
   }
 }
 
+/********* min width:   925px ************/
+
+@media (min-width: 925px) {
+  #ministries{ 
+    background-size: 100%;
+  }
+}
 
 
 
