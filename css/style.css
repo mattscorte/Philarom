@@ -182,7 +182,7 @@ body {
   background-size: auto 100%;
   position: relative;
   background-attachment: scroll;
-  /*height: 715px;*/
+  height: 715px;
   background-position: center top;
   }
 
@@ -196,7 +196,7 @@ body {
   background-size: auto 100%;
   position: relative;
   background-attachment: scroll;
-  /*height: 600px;*/
+  height: 600px;
   background-position: center top;
   }
 }
@@ -210,7 +210,7 @@ body {
 
 @media (min-width: 750px) {
   .slider {
-  /*height: 825px;*/
+  height: 825px;
   }
 
   .logo img{
@@ -705,20 +705,19 @@ input[type="button"].button-white {
 }
 
 #facebook:hover {
-  content: url('../img/facebookhover.png');
+  content: url('../img/Facebookhover.png');
 }
 
 #twitter:hover {
-  content: url('../img/twitterhover.png');
+  content: url('../img/Twitterhover.png');
 }
 @media (min-width: 1120px) {
 .slider {
-  background-size:100%;
+  background-size:150%;
 }
 }
 
 @media (min-width:1345px) {
   .slider {
-  padding-bottom:10%;
   }
 }
