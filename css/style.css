@@ -722,6 +722,11 @@ input[type="button"].button-white {
 #twitter:hover {
   content: url('../img/Twitterhover.png');
 }
+
+#eventlist {
+
+}
+
 @media (min-width: 1120px) {
 .slider {
   background-size:100%;
