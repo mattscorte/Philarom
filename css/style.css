@@ -175,7 +175,7 @@ body {
 }
 
 .slider {
-  background: url(../img/botez.jpg) no-repeat center center ;
+  background: url(../img/botez-new.jpg) no-repeat center;
   -webkit-background-size: auto 100%;
   -moz-background-size: 100%;
   -o-background-size: auto 100%;
@@ -189,7 +189,7 @@ body {
 
 @media (min-width: 400px) {
   .slider {
-  background: url(../img/botez.jpg) no-repeat center center ;
+  background: url(../img/botez-new.jpg) no-repeat center;
   -webkit-background-size: auto 100%;
   -moz-background-size: 100%;
   -o-background-size: auto 100%;
@@ -712,6 +712,8 @@ input[type="button"].button-white {
   content: url('../img/twitterhover.png');
 }
 
-
-
-
+@media (min-width: 1120px) {
+.slider {
+  background-size:100%;
+}
+}
