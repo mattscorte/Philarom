@@ -723,7 +723,8 @@ input[type="button"].button-white {
   content: url('../img/Twitterhover.png');
 }
 
-#eventlist {
+.eventtitle {
+  font-weight: bold;
 
 }
 
