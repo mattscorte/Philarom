@@ -182,7 +182,7 @@ body {
   background-size: auto 100%;
   position: relative;
   background-attachment: scroll;
-  height: 715px;
+  /*height: 715px;*/
   background-position: center top;
   }
 
@@ -196,7 +196,7 @@ body {
   background-size: auto 100%;
   position: relative;
   background-attachment: scroll;
-  height: 600px;
+  /*height: 600px;*/
   background-position: center top;
   }
 }
@@ -210,13 +210,13 @@ body {
 
 @media (min-width: 750px) {
   .slider {
-  height: 825px;
+  /*height: 825px;*/
   }
 
   .logo img{
   vertical-align: center;
   width: 100%;
-  margin: 6em auto 0;
+  margin: 6em auto;
   display: block;
 }
 
@@ -711,9 +711,14 @@ input[type="button"].button-white {
 #twitter:hover {
   content: url('../img/twitterhover.png');
 }
-
 @media (min-width: 1120px) {
 .slider {
   background-size:100%;
 }
+}
+
+@media (min-width:1345px) {
+  .slider {
+  padding-bottom:10%;
+  }
 }
