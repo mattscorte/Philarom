@@ -186,7 +186,7 @@ body {
 }
 
 .slider {
-  background: url(../img/botez-new.jpg) no-repeat center;
+  background: url(../img/botez.jpg) no-repeat center;
   -webkit-background-size: auto 100%;
   -moz-background-size: 100%;
   -o-background-size: auto 100%;
@@ -200,7 +200,7 @@ body {
 
 @media (min-width: 320px) {
   .slider {
-  background: url(../img/botez-new.jpg) no-repeat center;
+  background: url(../img/botez.jpg) no-repeat center;
   -webkit-background-size: auto 100%;
   -moz-background-size: 100%;
   -o-background-size: auto 100%;
@@ -531,7 +531,7 @@ input[type="button"].button-white {
 }
 
 #ministries {
-  background: url(../img/mexico-2.jpg) no-repeat center center ;
+  background: url(../img/mexico.jpg) no-repeat center center ;
   -webkit-background-size: auto 100%;
   -moz-background-size: 100%;
   -o-background-size: auto 100%;
@@ -716,11 +716,11 @@ input[type="button"].button-white {
 }
 
 #facebook:hover {
-  content: url('../img/Facebookhover.png');
+  content: url('../img/facebook-hover.png');
 }
 
 #twitter:hover {
-  content: url('../img/Twitterhover.png');
+  content: url('../img/twitter-hover.png');
 }
 
 .eventtitle {
