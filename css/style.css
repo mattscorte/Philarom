@@ -1,12 +1,12 @@
 /******** Header Styles ********/
 
 h1 {
-	font-family: 'apercumedium';
+  font-family: 'apercumedium';
 
-	letter-spacing: .02em;
-	margin-top: 50px;
-	margin-bottom: 30px;
-	color: #1d1d1d;
+  letter-spacing: .02em;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  color: #1d1d1d;
   text-transform: uppercase;
 }
 
@@ -19,14 +19,14 @@ h3 {
 }
 
 h5 {
-	font-family: 'apercumedium';
+  font-family: 'apercumedium';
   color: #1d1d1d;
 }
 
 p {font-size: 2rem;}
 
 body {
-	font-family: 'apercumedium', sans-serif;
+  font-family: 'apercumedium', sans-serif;
 
 }
 
@@ -48,15 +48,26 @@ body {
 
 
 
-@media (min-width: 400px) {
-  .header {
+@media (min-width: 320px) {
+/*  .header {
     display: none;
   }
 
   .header ul{
     display: none;
-  }
-
+  }*/
+.header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    margin: 0;
+    min-height: 35px;
+    padding: 10px;
+    background-color: white transparent;
+    letter-spacing: .2em;
+    z-index: 5;
+    display: block;
+}
 #mobile-menu {
     background: url("/img/logo.png") no-repeat scroll 0 0 transparent;
     cursor: pointer;
@@ -66,14 +77,14 @@ body {
     width: 41px;
     visibility: visible;
   }
-  
+
 
 }
 
 @media (min-width: 550px){
-  .header {
+/*  .header {
     display: none;
-  }
+  }*/
 
   .header.scrolling {
     background-color: #1d1d1d;
@@ -137,7 +148,7 @@ body {
     text-decoration: none;
     border-bottom: 2px solid white;
     margin-top: -2px;
-    height: 
+    height:
 
 }
 
@@ -174,8 +185,8 @@ body {
   color: white;
 }
 
-.slider { 
-  background: url(../img/botez.jpg) no-repeat center center ; 
+.slider {
+  background: url(../img/botez.jpg) no-repeat center;
   -webkit-background-size: auto 100%;
   -moz-background-size: 100%;
   -o-background-size: auto 100%;
@@ -187,9 +198,9 @@ body {
   }
 
 
-@media (min-width: 400px) {
-  .slider { 
-  background: url(../img/botez.jpg) no-repeat center center ; 
+@media (min-width: 320px) {
+  .slider {
+  background: url(../img/botez.jpg) no-repeat center;
   -webkit-background-size: auto 100%;
   -moz-background-size: 100%;
   -o-background-size: auto 100%;
@@ -204,19 +215,19 @@ body {
 .logo img{
   vertical-align: center;
   width: 100%;
-  margin: 4em auto 0;
+  margin: 5em auto 0;
   display: block;
 }
 
 @media (min-width: 750px) {
-  .slider { 
+  .slider {
   height: 825px;
   }
 
   .logo img{
   vertical-align: center;
   width: 100%;
-  margin: 6em auto 0;
+  margin: 6em auto;
   display: block;
 }
 
@@ -227,11 +238,11 @@ body {
 ******************************* EVENTS SECTION ********************************
 *****************************************************************************/
 
-/************* MIN-WIDTH   400PX ***************/
-@media (min-width: 400px) {
+/************* MIN-WIDTH   320PX ***************/
+@media (min-width: 320px) {
 
   #events {
-  background-color: #F7CEC4; 
+  background-color: #F7CEC4;
 }
     /**  FDDDD5 **/
 
@@ -270,7 +281,9 @@ body {
     margin-bottom: 7%;
   }
 
-}
+  #events h1, button {
+    text-align: center;
+  }
 
 /************* MIN-WIDTH   750PX ***************/
 @media (min-width: 750px) {
@@ -288,7 +301,7 @@ body {
 }
 
 #events h1,h3, h5, h6, p{
-	text-align: center;
+  text-align: center;
 }
 
 #events h6 {
@@ -298,8 +311,8 @@ body {
 }
 
 #events h6, p {
-	font-family: 'apercumedium';
-	color: black;
+  font-family: 'apercumedium';
+  color: black;
 }
 
 #events img {
@@ -320,9 +333,9 @@ body {
 ******************************* LIVE SECTION ********************************
 *****************************************************************************/
 
-@media (min-width: 400px) {
-  #live{ 
-  background: url(../img/philachurch.jpg) no-repeat center center ; 
+@media (min-width: 320px) {
+  #live{
+  background: url(../img/philachurch.jpg) no-repeat center center ;
   -webkit-background-size: auto 100%;
   -moz-background-size: 100%;
   -o-background-size: auto 100%;
@@ -335,14 +348,14 @@ body {
 }
 
 #live h1 {
-	text-align: center;
-	color: white;
-	padding: 40px;
+  text-align: center;
+  color: white;
+  padding: 40px;
 }
 
 #live h3 {
-	font-family: 'apercumedium';
-	color: white;
+  font-family: 'apercumedium';
+  color: white;
   text-align: center;
   margin-top: 20%;
   text-transform: uppercase;
@@ -350,10 +363,10 @@ body {
 
 
 #live img {
-	vertical-align: middle;
-	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
+  vertical-align: middle;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 15%;
 }
 
@@ -387,7 +400,7 @@ body {
 
 
 @media (min-width: 925px) {
-  #live{ 
+  #live{
     background-size: 100%;
   }
 }
@@ -401,8 +414,8 @@ body {
 
 
 
-/********* min width:   400px ************/ 
-@media (min-width: 400px) {
+/********* min width:   320px ************/
+@media (min-width: 320px) {
 #blog .container .four.columns {
     float:left;
     width: 100%;
@@ -508,7 +521,7 @@ input[type="button"] {
 ******************************* MINISTRIES SECTION **************************
 *****************************************************************************/
 
-@media (min-width: 400px) {
+@media (min-width: 320px) {
   #ministries .button.button-white,
 button.button-white,
 input[type="submit"].button-white,
@@ -517,8 +530,8 @@ input[type="button"].button-white {
   float: left;
 }
 
-#ministries { 
-  background: url(../img/mexico-2.jpg) no-repeat center center ; 
+#ministries {
+  background: url(../img/mexico.jpg) no-repeat center center ;
   -webkit-background-size: auto 100%;
   -moz-background-size: 100%;
   -o-background-size: auto 100%;
@@ -530,29 +543,29 @@ input[type="button"].button-white {
   }
 
 #ministries h1 {
-	text-align: left;
+  text-align: left;
   color: white;
   float: right;
   margin: 3em 0 3rem 0;
 }
 
 #ministries h3,p {
-	text-align: center;
-	color: black;
+  text-align: center;
+  color: black;
 }
 
 #ministries h3 {
-	margin-top: 25px;
+  margin-top: 25px;
 }
 
 #ministries img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #ministries .large-4 {
-	margin-bottom: 70px;
+  margin-bottom: 70px;
 }
 
 #ministries button {
@@ -570,7 +583,7 @@ input[type="button"].button-white {
 /********* min width:   925px ************/
 
 @media (min-width: 925px) {
-  #ministries{ 
+  #ministries{
     background-size: 100%;
   }
 }
@@ -582,20 +595,20 @@ input[type="button"].button-white {
 ******************************* YOUTH SECTION ********************************
 *****************************************************************************/
 
-@media (min-width: 400px) {
+@media (min-width: 320px) {
 
 #youth {
   background-color: #F7F7F7;
 }
 
 #youth h1 {
-	text-align: center;
-	margin: 65px 0 40px;
+  text-align: center;
+  margin: 65px 0 40px;
 }
 
 #youth h4 {
   margin-top: 0px;
-	
+
 }
 
 #youth p {
@@ -613,7 +626,7 @@ input[type="button"].button-white {
 
 @media (min-width: 550px) {
   #youth img {
-    width: 80%; 
+    width: 80%;
     display: block;
     margin: 0 auto 10%;
   }
@@ -666,50 +679,63 @@ input[type="button"].button-white {
 }
 
 #footer h6 {
-	text-align: center;
+  text-align: center;
 }
 
 #donate {
-	text-align: center;
-	margin-top: 50px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 #social {
-	margin: 50px auto;
-	text-align: center;
+  margin: 50px auto;
+  text-align: center;
 }
 
 #facebook {
-	width: 50px;
-	height: 50px;
-	margin: 0 10px;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
 }
 
 #twitter {
-	width: 50px;
-	height: 45px;
-	margin: 0 10px;
+  width: 50px;
+  height: 45px;
+  margin: 0 10px;
 }
 
 #footer hr {
-	text-align: center;
-	margin: 0 auto;
-	margin-bottom: 40px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 #footer p {
-	font-size: 8pt;
-	margin-top: 25px;
+  font-size: 8pt;
+  margin-top: 25px;
 }
 
 #facebook:hover {
-	content: url('../img/facebookhover.png');
+  content: url('../img/facebook-hover.png');
 }
 
 #twitter:hover {
-	content: url('../img/twitterhover.png');
+  content: url('../img/twitter-hover.png');
 }
 
+.eventtitle {
+  font-weight: bold;
 
+}
 
+@media (min-width: 1120px) {
+.slider {
+  background-size:100%;
+  height:100%;
+}
+}
 
+@media (min-width:1345px) {
+  .slider {
+  }
+}

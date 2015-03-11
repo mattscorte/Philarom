@@ -9,7 +9,7 @@
 
 
 /* Table of contents
-–––––––––––––––––––––––––––––––––––––––––––––––––– 
+––––––––––––––––––––––––––––––––––––––––––––––––––
 - Grid
 - Base Styles
 - Typography
@@ -29,29 +29,29 @@
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
-  position: relative; 
-  width: 80%; 
-  max-width: 960px; 
-  margin: 0 auto; 
+  position: relative;
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
   padding: 0; }
-.container .column,        
-.container .columns { 
-  float: left; 
-  width: 100%; 
+.container .column,
+.container .columns {
+  float: left;
+  width: 100%;
   box-sizing: border-box; }
-.row { 
+.row {
   margin-bottom: 2rem; }
-.row .column:first-child,        
-.row .columns:first-child { 
+.row .column:first-child,
+.row .columns:first-child {
   margin-left: 0; }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
-  
+
   .container .column,
   .container .columns {
     margin-left: 0%; }
-  
+
   .container .one.column,
   .container .one.columns          { width: 4.66666666667%; }
   .container .two.columns          { width: 13.3333333333%; }
@@ -96,10 +96,10 @@
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* NOTE
-html is set to 62.5% so that all the REM measurements throughout Skeleton 
+html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
-html { 
-  font-size: 62.5%; } 
+html {
+  font-size: 62.5%; }
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
@@ -110,7 +110,7 @@ body {
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-h1, h2, h3, h4, h5, h6 { 
+h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 2rem; }
@@ -137,13 +137,13 @@ p {
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-a { 
+a {
   color: #1EAEDB; }
-a:hover { 
+a:hover {
   color: #1d1d1d; }
 
 
-/* Buttons 
+/* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button,
 button,
@@ -166,9 +166,9 @@ input[type="button"] {
   border-color: #1d1d1d;
   color: black;
   padding: 0 30px;
-  transition: background-color 300ms ease-out; 
+  transition: background-color 300ms ease-out;
   line-height: 38px;
-  letter-spacing: .1rem; 
+  letter-spacing: .1rem;
   white-space: nowrap;
   box-sizing: border-box; }
 .button:hover,
@@ -193,7 +193,7 @@ input[type="button"].button-white {
   font-size: 1.8rem;
   border-style: solid;
   border-width: 2px;
-  border-color: white; 
+  border-color: white;
   display: inline-block;
   background-color: transparent;
   color: white;
@@ -203,7 +203,7 @@ input[type="button"].button-white {
   cursor: pointer;
   padding: 0 10px;
   line-height: 38px;
-  letter-spacing: .1rem; 
+  letter-spacing: .1rem;
   white-space: nowrap;
   box-sizing: border-box; }
 
@@ -219,7 +219,7 @@ input[type="submit"].button-white:focus,
 input[type="reset"].button-white:focus,
 input[type="button"].button-white:focus {
   background-color: white;
-  color: black; 
+  color: black;
 }
 
 
@@ -277,18 +277,18 @@ label > .label-body {
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-ul { 
-  list-style: circle inside; }
-ol { 
+ul {
+  list-style: inside none; }
+ol {
   list-style: decimal inside; }
 ol, ul {
   margin-top: 0;
   padding-left: 0; }
-ul ul, 
+ul ul,
 ul ol,
-ol ol, 
-ol ul { 
-  margin: 1.5rem 0 1.5rem 3rem; 
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
   font-size: 90%; }
 li {
   margin-bottom: 1rem; }
@@ -380,7 +380,7 @@ hr {
 /* Self Clearing Goodness */
 .container:after,
 .row:after,
-.u-cf { 
+.u-cf {
   content: "";
   display: table;
   clear: both; }
@@ -389,19 +389,19 @@ hr {
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
-Note: The best way to structure the use of media queries is to create the queries 
+Note: The best way to structure the use of media queries is to create the queries
 near the relevant code. For example, if you wanted to change the styles for buttons
-on small devices, paste the mobile query code up in the buttons secion and style it 
-there. 
+on small devices, paste the mobile query code up in the buttons secion and style it
+there.
 */
 
 
 /* Larger than mobile */
 @media (min-width: 400px) {
 
-.header{ 
+/*.header{
   display: none;
-}
+}*/
 
 /* Blog */
 
@@ -440,7 +440,7 @@ h1 {
     height: 50%;
   }
 
-  .header-ul > li a{ 
+  .header-ul > li a{
     font-size: 1.6rem;
     margin: 0 15px;
   }
@@ -470,7 +470,7 @@ h1 {
 /********************** Larger than tablet *******************************
 ********************** Min Width     750px *******************************/
 @media (min-width: 750px) {
-  
+
 
 
 
@@ -483,7 +483,7 @@ h1 {
     height: 600px;
 }
 
-.header-ul > li a{ 
+.header-ul > li a{
     font-size: 1.8rem;
     margin: 0 20px;
   }
@@ -503,7 +503,7 @@ h1 {
   font-size: 3em;
   }
 
-  .header-ul > li a{ 
+  .header-ul > li a{
     font-size: 2rem;
       margin: 0 35px;
   }
